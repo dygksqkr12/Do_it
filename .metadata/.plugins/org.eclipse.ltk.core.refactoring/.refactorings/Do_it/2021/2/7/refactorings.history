@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;i&apos; in &apos;chapter01.Q16.spira(...)&apos; to &apos;j&apos;&#x0D;&#x0A;- Original project: &apos;Do_it&apos;&#x0D;&#x0A;- Original element: &apos;chapter01.Q16.spira(int).i&apos;&#x0D;&#x0A;- Renamed element: &apos;i&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;i&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;chapter01{Q16.java[Q16~spira~I@i!109!117!113!113!I!0!false" name="j" references="true" stamp="1612725826873" version="1.0"/>
+</session>

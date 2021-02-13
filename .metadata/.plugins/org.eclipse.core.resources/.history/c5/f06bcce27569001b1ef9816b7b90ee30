@@ -1,0 +1,28 @@
+package chapter01;
+
+import java.util.Scanner;
+
+public class Q15 {
+
+	static void triangleLB(int n) {
+		for (int i = 1; i <= n; i++) { 				// i행 (i = 1, 2, … ,n)
+			for (int j = 1; j <= i; j++) 			// i개의 '*'를 나타냄
+				System.out.print('*');
+			System.out.println(); 					// 개행(줄변환)
+		
+		}
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n;
+
+		System.out.println("삼각형 모양으로 나타냅니다.");
+
+		do {
+			System.out.print("단수는 ：");
+			n = sc.nextInt();
+		} while (n <= 0);
+		triangleLB(n);
+		}
+
+}
