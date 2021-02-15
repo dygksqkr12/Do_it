@@ -2,17 +2,17 @@ package chapter02;
 
 import java.util.Scanner;
 
-public class Q04 {
-	static void copy(int[] a, int[] b) {
+public class Q05 {
+	
+	static void rcopy(int[] a, int[] b) {
 		int num = a.length <= b.length ? a.length : b.length;
 		for (int i = 0; i < num; i++)
-			a[i] = b[i];
-		
+			a[i] = b[b.length - i - 1];
 	}
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
+
 		System.out.print("a의 요솟수는 ：");
 		int numa = sc.nextInt(); // 요솟수
 		int[] a = new int[numa]; // 요솟수 numa인 배열
@@ -29,12 +29,11 @@ public class Q04 {
 			b[i] = sc.nextInt();
 		}
 
-		copy(a, b); // 배열 b의 모든 요소를 배열 a에 역순으로 복사
+		rcopy(a, b); // 배열 b의 모든 요소를 배열 a에 역순으로 copy
 
-		System.out.println("배열 b의 모든 요소를 배열 a에 복사했습니다.");
+		System.out.println("배열 b의 모든 요소를 배열 a에 역순으로 복사했습니다.");
 		for (int i = 0; i < numa; i++)
 			System.out.println("a[" + i + "] = " + a[i]);
-		}
 	}
 
-
+}
