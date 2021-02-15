@@ -1,0 +1,16 @@
+package chapter02;
+
+public class PrimeNumber3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int counter = 0;
+		int ptr = 0;
+		int[] prime = new int[500];
+		
+		prime[ptr++] = 2;
+		prime[ptr++] = 3;
+		System.out.println(ptr);
+	}
+
+}

@@ -1,0 +1,15 @@
+package chapter02;
+
+public class PrimeNumber2 {
+
+	public static void main(String[] args) {
+		int counter = 0;
+		int ptr = 0;
+		int[] prime = new int[500];
+		System.out.println(ptr);
+		prime[ptr++] = 0;
+		System.out.println(ptr);
+		System.out.println(prime[ptr]);
+	}
+
+}
